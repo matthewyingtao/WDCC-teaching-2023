@@ -1,0 +1,57 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	display: grid;
+	place-items: center;
+	background-color: #313730;
+}
+
+.modal {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto 1fr;
+	min-height: 15rem;
+	min-width: 40rem;
+	background-color: #232723;
+	border-radius: 0.5rem;
+	overflow: auto;
+	color: white;
+}
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	grid-column: 1 / -1;
+	padding: 1rem 2rem;
+	border-bottom: 1px solid #444;
+}
+
+h2 {
+	margin: 0;
+}
+
+button {
+	border-radius: 999px;
+	padding: 0.25rem 0.5rem;
+}
+
+section {
+	padding: 2rem;
+	height: 100%;
+	grid-column: span 2;
+}
+
+aside {
+	padding: 2rem;
+	height: 100%;
+}
